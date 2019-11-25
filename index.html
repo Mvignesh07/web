@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Vignesh</title>
+	<link rel="icon" href="data:image/jpeg;base64,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">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>V</span>ignesh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Gallery</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hey! I am</span>
+			  
+				  <h1>Vignesh</h1>
+			  				<h2>I'm a 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Web Designer.", "Developer.", "Cricketer." ]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(vig2.jpeg);">
+							
+						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p> It's my pleasure to introduce my self. well I am Vignesh. In English my name is Indian (Sanskrit) origin and means "God Vinayaga"</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Vignesh</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>January 2, 2000</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>1/96,Middle Street,<br>Kallanatham,<br>Attur,Salem</span></li>
+		            	<li class="d-flex"><span>Pin code:</span> <span>636 141</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>vigneshamutha123123@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>9384238384</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	         
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+  
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+				    <nav id="navi">
+					    <ul>
+					      <li><a href="#page-1">Education</a></li>
+					      <li><a href="#page-3">Skills</a></li>
+					    </ul>
+					  </nav>
+					</div>
+					<div class="col-md-9">
+					  <div id="page-1" class= "page one">
+					  	<h2 class="heading">Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2014-2015</span>
+		    					<h2>SSLC</h2>
+		    					<span class="position">Government Higher Secondary School, KALLANATHAM</span>
+		    					<p>I have completed SSLC with 95%.<br>Mark : 475.</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2016-2017</span>
+		    					<h2>HSC</h2>
+		    					<span class="position">Paavendhar Matric Higher Secondary School, ATTUR.</span>
+		    					<p>I have completed HSC with 93.75%.<br>Mark : 1125.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2017-2021</span>
+		    					<h2>B.E - Computer Science and Engineering</h2>
+		    					<span class="position">K.S.R College Of Engineering,Tiruchengode. </span>
+		    					<p>Now I am pursuing B.E with 8.4 Grade.</p>
+		    				</div>
+	    				</div>
+	    				
+					  </div>
+
+					  <div id="page-3" class= "page three">
+					  	<h2 class="heading">Skills</h2>
+					  	<div class="row progress-circle mb-5">
+					  		<div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='85'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+							</div>
+							
+							
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='80'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Javascript</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='75'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+							</div>
+							
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+								  <h2 class="h5 font-weight-bold text-center mb-4">Photoshop</h2>
+  
+								  <!-- Progress bar 1 -->
+								  <div class="progress mx-auto" data-value='70'>
+									<span class="progress-left">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+									  <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+									</div>
+								  </div>
+								  <!-- END -->
+								</div>
+							  </div>
+
+							  <div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+								  <h2 class="h5 font-weight-bold text-center mb-4">C</h2>
+  
+								  <!-- Progress bar 1 -->
+								  <div class="progress mx-auto" data-value='75'>
+									<span class="progress-left">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+									  <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+									</div>
+								  </div>
+								  <!-- END -->
+								</div>
+							  </div>
+
+							  <div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+								  <h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
+  
+								  <!-- Progress bar 1 -->
+								  <div class="progress mx-auto" data-value='70'>
+									<span class="progress-left">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<span class="progress-right">
+						  <span class="progress-bar border-primary"></span>
+									</span>
+									<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+									  <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+									</div>
+								  </div>
+								  <!-- END -->
+								</div>
+							  </div>
+					  	</div>
+					  </div>
+					  <div id="page-4" class= "page four">
+					    <h2 class="heading">Awards</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2016-2017</span>
+		    					<h2>In 12th standard, I have secured Fifth mark in my School.</h2>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2015-2016</span>
+		    					<h2>Winner in School level Cricket Tournment.</h2>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2014-2016</span>
+		    					<h2>In 10th standard, I have secured Second mark in my School.</h2>
+		    				</div>
+	    				</div>
+	    				
+					  </div>
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container-fluid px-md-0">
+    		<div class="row no-gutters justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Gallery</h1>
+            <h2 class="mb-4">My Gallery</h2>
+            <b>"Life begins at the End of Your Comfort Zone."</b>
+          </div>
+        </div>
+    		<div class="row no-gutters">
+    			<div class="col-md-4">
+						<div class="vig">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+    				 <img src="vig3.jpg" style="width: 100%;"></div>
+	    				
+    				</div>
+  				</div>
+  				<div class="col-md-4">
+    				<div class="vig">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+    				 <img src="vig6.jpeg" style="width: 100%;"></div>
+	    				
+    				</div>
+  				</div>
+
+    			<div class="col-md-4">
+						<div class="vig">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+								 <img src="vig1.jpeg" style="width: 100%; height: 102%;" > </div>
+									
+								</div>
+				</div>
+				
+
+    			<div class="col-md-4">
+    					<div class="vig">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+								 <img src="vig9.jpg" style="width: 100%;"></div>
+									
+								</div>
+    			</div>
+    			<div class="col-md-4">
+    					<div class="vig">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+								 <img src="vig5.jpg" style="width: 100%;"></div>
+									
+								</div>
+    			</div>
+    			<div class="col-md-4">
+    					<div class="vig">
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+								 <img src="vig7.jpg" style="width: 100%; height: 102;"></div>
+									
+								</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+			  
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box text-center p-4 shadow">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-facebook"></span>
+					</div>
+					<div>
+						<h3 class="mb-4">Facebook</h3>
+					  <p><a href="https://www.facebook.com/vignesh.m.9440234">Vignesh M</a></p>
+				  </div>
+				</div>
+			</div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-instagram"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">instagram</h3>
+		            <p><a href="https://www.instagram.com/vigneshamutha123123/">vigneshamutha123123</a></p>
+	            </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Email Address</h3>
+					<p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> vigneshamutha123123
+						@gmail.com</a></p>
+		          </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-twitter"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Twitter</h3>
+		            <p><a href="https://twitter.com/@Vignesh42970498">Vickymsd777</a></p>
+	            </div>
+	          </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-12 text-center">
+			  <b style="color: powderblue">"Success and Failure are Both part of Life.... Both are not Permanent"</b><br>
+			  <br>
+
+            <p>Created by<i class="icon-heart color-danger" aria-hidden="true" style="color:lightseagreen"></i> <b>Vignesh</b></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
